@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kirolos Khairy — Information Security Engineering student at Ural Federal University (UrFU). Focused on cybersecurity, secure systems, Linux administration, networking, and hands-on security labs and competitions.">
+    <meta name="keywords" content="Information Security, Cybersecurity, Ural Federal University, UrFU, Pentesting, SOC, Linux, Astra Linux, Kali Linux, Ekahau, Wi-Fi Design, CTF">
+    <title>Kirolos Khairy - Cybersecurity & Software Development Portfolio</title>
+    <link rel="icon" href="icon.png" type="images/Ethical_Hacking (1).png">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- Download functionality CSS -->
+    <link rel="stylesheet" href="./css/downloading.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  </head>
+<body class="software-mode" id="top">
+  <!-- Header -->
+  <header id="header" data-aos="fade-down" data-aos-duration="800" data-aos-easing="ease-out">
+    <nav>
+      <div class="header-title" data-aos="fade-right" data-aos-delay="200">Kirolos Khairy</div>
+      <button class="menu-icon" id="menu-icon" aria-label="Toggle Menu" data-aos="fade-left" data-aos-delay="200">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="header-links" id="header-links">
+        <a href="#home" class="active-link" data-aos="fade-down" data-aos-delay="300">Home</a>
+        <a href="#about" data-aos="fade-down" data-aos-delay="350">About</a>
+        <a href="./pages/certifications.html" data-aos="fade-down" data-aos-delay="400">Certifications</a>
+        <a href="./pages/projects.html" data-aos="fade-down" data-aos-delay="450">Projects</a>
+        <a href="#skills" data-aos="fade-down" data-aos-delay="500">Skills</a>
+        <a href="./pages/contact.html" data-aos="fade-down" data-aos-delay="550">Contact</a>
+      </div>
+      <div class="header-buttons">
+        <a href="https://github.com/KirolosKhairy" target="_blank" aria-label="GitHub" data-aos="fade-left" data-aos-delay="600"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/kirolos-khairy" target="_blank" aria-label="LinkedIn" data-aos="fade-left" data-aos-delay="650"><i class="fab fa-linkedin"></i></a>
+        <button id="mode-toggle" title="Switch Mode" aria-label="Switch Mode" data-aos="fade-left" data-aos-delay="700">
+          <i class="fas fa-code"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+<!-- Initialization Loading Overlay -->
+    <div class="init-loading-overlay" id="initLoading">
+        <div class="init-loading-content">
+            <div class="init-loading-icon">
+                <i class="fas fa-bug"></i>
+            </div>
+            <h2>Initializing Security Protocols</h2>
+            <div class="init-progress-container">
+                <div class="init-progress-bar" id="initProgressBar"></div>
+            </div>
+            <div class="init-loading-text" id="initLoadingText">Loading essential components...</div>
+        </div>
+    </div>
+  <!-- Main Content -->
+  <main>
+    <!-- Home Welcome Section -->
+    <section id="home" class="animate__animated animate__fadeIn home-section">
+      <div class="home-content" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+        <h1 data-aos="fade-up" data-aos-delay="300">Welcome to My Portfolio</h1>
+        <p id="Effect-Write" data-aos="fade-up" data-aos-delay="400"></p>
+        <p data-aos="fade-up" data-aos-delay="500"><i class="fas fa-bug" style="color: var(--primary-color);"></i></p>
+      </div>
+
+      <div class="home-content" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+        <a href="#about" class="cta-button" data-aos="zoom-in" data-aos-delay="700">Explore My Work <i class="fas fa-chevron-down"></i></a>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="animate__animated animate__fadeIn">
+      <h2 data-aos="fade-down" data-aos-duration="800">About Me</h2>
+      <div class="about-box">
+        <img src="images/Kirolos.JPG" loading="lazy" alt="Kirolos Khairy" class="profile-image"
+             data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-out">
+        <div class="bio" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-out">
+          <h1 data-aos="fade-up" data-aos-delay="300">Elia Kirolos Khairy Fawzy</h1>
+          <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+            I am an Information Security Engineering student at Ural Federal University (UrFU), currently studying in Russia, with a strong focus on cybersecurity and secure systems.
+          </p>
+          <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+            I have hands-on experience working with Linux-based systems (including Kali Linux and Astra Linux), networking fundamentals, and security tools used in penetration testing and SOC environments. My technical background includes programming and scripting with Python, Bash, SQL.
+          </p>
+          <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+            I am actively developing my skills in web penetration testing, malware analysis, and Red Team methodologies, and I participate in practical labs, security projects, and cybersecurity competitions. I am particularly interested in offensive security, while maintaining a solid understanding of defensive concepts and system hardening.
+          </p>
+          <a href="" download="Kirolos_Khairy_CV.pdf" class="cta-button"
+             data-aos="zoom-in" data-aos-duration="600" data-aos-delay="1000">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Skills Section -->
+<section id="skills" class="animate__animated animate__fadeIn">
+  <h2 data-aos="fade-down" data-aos-duration="800">Skills</h2>
+
+  <div class="timeline">
+
+    <!-- Programming & Scripting -->
+    <div class="timeline-item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
+      <h3 data-aos="fade-up" data-aos-delay="300">Programming & Scripting</h3>
+      <p>
+        <span data-aos="zoom-in" data-aos-duration="600" data-aos-delay="500"><i class="devicon-python-plain colored"></i> Python</span>
+        <span data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600"><i class="devicon-bash-plain colored"></i> Bash</span>
+        <span data-aos="zoom-in" data-aos-duration="600" data-aos-delay="800"><i class="devicon-mysql-plain colored"></i> SQL</span>
+      </p>
+    </div>
+
+    <!-- Operating Systems & Administration -->
+    <div class="timeline-item" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
+      <h3 data-aos="fade-up" data-aos-delay="500">Operating Systems & Administration</h3>
+      <p>
+        <span data-aos="flip-left" data-aos-duration="600" data-aos-delay="500"><i class="devicon-linux-plain colored"></i> Linux (Kali Linux, Astra Linux)</span>
+        <span data-aos="flip-left" data-aos-duration="600" data-aos-delay="600">🧩 Users, permissions, ACL, sudo, services (systemd)</span>
+        <span data-aos="flip-left" data-aos-duration="600" data-aos-delay="700">🧪 Practical lab reporting & evidence (logs, screenshots)</span>
+      </p>
+    </div>
+
+    <!-- Networking & Wi-Fi -->
+    <div class="timeline-item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="600">
+      <h3 data-aos="fade-up" data-aos-delay="700">Networking & Wi-Fi Engineering</h3>
+      <p>
+        <span data-aos="flip-up" data-aos-duration="700" data-aos-delay="700">🌐 Networking fundamentals (routing/switching basics)</span>
+        <span data-aos="flip-up" data-aos-duration="700" data-aos-delay="800">📡 Wi-Fi planning & surveys (Ekahau AI Pro)</span>
+        <span data-aos="flip-up" data-aos-duration="700" data-aos-delay="900">📈 Coverage & capacity analysis, AP placement, channel planning (hands-on project)</span>
+      </p>
+    </div>
+
+    <!-- Cybersecurity: Blue/Defensive -->
+    <div class="timeline-item" data-aos="fade-left" data-aos-duration="800" data-aos-delay="800">
+      <h3 data-aos="fade-up" data-aos-delay="900">Cybersecurity (Defensive / SOC)</h3>
+      <p>
+        <span data-aos="flip-left" data-aos-duration="600" data-aos-delay="900">🛡️ IDS basics & configuration (Suricata)</span>
+        <span data-aos="flip-left" data-aos-duration="600" data-aos-delay="1000">🧾 Log formats & analysis (e.g., JSON / eve.json)</span>
+        <span data-aos="flip-left" data-aos-duration="600" data-aos-delay="1100">🔎 Digital forensics basics & artifact collection (UAC toolkit)</span>
+        <span data-aos="flip-left" data-aos-duration="600" data-aos-delay="1200">🍯 Honeypot labs (Cowrie) & security monitoring workflows</span>
+      </p>
+    </div>
+
+    <!-- Cybersecurity: Offensive -->
+    <div class="timeline-item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="1000">
+      <h3 data-aos="fade-up" data-aos-delay="1100">Cybersecurity (Offensive / Red Team — Learning)</h3>
+      <p>
+        <span data-aos="flip-up" data-aos-duration="700" data-aos-delay="1100">🔍 Web penetration testing (learning through labs & practice)</span>
+        <span data-aos="flip-up" data-aos-duration="700" data-aos-delay="1200">🧠 Malware analysis (learning fundamentals & basic practice)</span>
+        <span data-aos="flip-up" data-aos-duration="700" data-aos-delay="1300">🎯 Red Team methodologies (learning path & hands-on exercises)</span>
+      </p>
+    </div>
+
+    <!-- Tools & Collaboration -->
+    <div class="timeline-item" data-aos="fade-left" data-aos-duration="800" data-aos-delay="1200">
+      <h3 data-aos="fade-up" data-aos-delay="1300">Tools & Collaboration</h3>
+      <p>
+        <span data-aos="flip-left" data-aos-duration="600" data-aos-delay="1300"><i class="devicon-git-plain colored"></i> Git & GitHub</span>
+        <span data-aos="flip-left" data-aos-duration="600" data-aos-delay="1400">📝 Technical documentation (reports, presentations)</span>
+        <span data-aos="flip-left" data-aos-duration="600" data-aos-delay="1500">🤝 Teamwork & time management (projects + university workload)</span>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Competitions & Challenges Section -->
+<section id="competitions" class="animate__animated animate__fadeIn" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+  <h2 data-aos="fade-down" data-aos-duration="800">Competitions & Challenges</h2>
+
+  <div class="timeline">
+
+    <div class="timeline-item" data-aos="flip-up" data-aos-duration="800" data-aos-delay="400">
+      <h3 data-aos="fade-up" data-aos-delay="500">UralCTF 2025</h3>
+      <p data-aos="fade-up" data-aos-delay="600">
+        Participation in a Capture The Flag (CTF) competition focused on practical cybersecurity challenges, including vulnerability analysis, exploitation basics, and structured problem-solving under time constraints.
+      </p>
+    </div>
+
+    <div class="timeline-item" data-aos="flip-up" data-aos-duration="800" data-aos-delay="550">
+      <h3 data-aos="fade-up" data-aos-delay="650">Alfa CTF 2025</h3>
+      <p data-aos="fade-up" data-aos-delay="750">
+        Participation in a cybersecurity competition involving security analysis tasks and applied problem-solving, with an emphasis on teamwork and analytical thinking.
+      </p>
+    </div>
+
+    <div class="timeline-item" data-aos="flip-up" data-aos-duration="800" data-aos-delay="700">
+      <h3 data-aos="fade-up" data-aos-delay="800">ICPC Ural Regional Qualification</h3>
+      <p data-aos="fade-up" data-aos-delay="900">
+        Participation in a regional programming contest focused on algorithmic thinking, data structures, and collaborative problem-solving in a team-based environment.
+      </p>
+    </div>
+
+    <div class="timeline-item" data-aos="flip-up" data-aos-duration="800" data-aos-delay="850">
+      <h3 data-aos="fade-up" data-aos-delay="950">RuCode Programming Competition</h3>
+      <p data-aos="fade-up" data-aos-delay="1050">
+        Participation in a national programming competition emphasizing logical reasoning, algorithmic problem-solving, and efficient coding practices.
+      </p>
+    </div>
+
+    <div class="timeline-item" data-aos="flip-up" data-aos-duration="800" data-aos-delay="1000">
+      <h3 data-aos="fade-up" data-aos-delay="1100">Cyberbitva (Altai IT Forum)</h3>
+      <p data-aos="fade-up" data-aos-delay="1200">
+        Participation in a cybersecurity competition focused on defensive and analytical tasks, including security monitoring concepts and incident analysis scenarios.
+      </p>
+    </div>
+
+    <div class="timeline-item" data-aos="flip-up" data-aos-duration="800" data-aos-delay="1150">
+      <h3 data-aos="fade-up" data-aos-delay="1250">T1 Hackathon (WAF Bypass Challenge)</h3>
+      <p data-aos="fade-up" data-aos-delay="1350">
+        Participation in a hackathon challenge focused on web security, exploring web application behavior and bypass techniques in a controlled competitive environment.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Education Section -->
+    <section id="education" class="animate__animated animate__fadeIn">
+      <h2 data-aos="fade-down" data-aos-duration="800">Education</h2>
+      <div class="education-container">
+          <img src="images/urfu.jpg" loading="lazy" alt="Education Image" class="education-image">
+          <div class="education-content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+              <h3 data-aos="fade-up" data-aos-delay="400">Ural Federal University</h3>
+              <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">Institute of Radioelectronics and Information Technologies – RTF
+</p>
+              <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">Bachelor’s Degree in Information Security (10.03.01)</p>
+              <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="700">This bachelor’s program offers a structured academic curriculum aimed at developing a solid foundation in information security.
+The program focuses on analytical thinking, systematic problem solving, and disciplined technical training, while emphasizing regular coursework, practical assignments, and collaborative work, supporting students’ academic and professional development in the field of information security.</p>
+              <ul>
+                <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="800">Develop practical skills in Linux-based systems and command-line environments</li>
+                <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="900">Build a solid understanding of networking fundamentals and system administration</li>
+                <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="1000">Gain hands-on experience through security labs and practical coursework</li>
+                <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="1100">Gradually specialize in cybersecurity and information security disciplines, with a growing interest in penetration testing and offensive security</li>
+              </ul>
+              <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="1200">Expected Graduation: 2026</p>
+          </div>
+      </div>
+    </section>
+
+<!-- Student Activities & Leadership Section -->
+<section id="activities" class="animate__animated animate__fadeIn">
+  <h2 data-aos="fade-down" data-aos-duration="800">
+    Student Activities & Leadership
+  </h2>
+
+  <div class="activities-container">
+
+    <!-- Arab Student Union -->
+    <div class="activity-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+      <h3 data-aos="fade-up" data-aos-delay="300">
+        Arab Student Union – Ural Federal University
+      </h3>
+      <p data-aos="fade-up" data-aos-delay="400">
+        Active member for over three years, contributing to the support of newly arrived Arab students in adapting to university life in Russia. Responsibilities include academic guidance, assistance with administrative procedures, and facilitating integration into the university community.
+      </p>
+    </div>
+
+    <!-- Buddy System -->
+    <div class="activity-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="350">
+      <h3 data-aos="fade-up" data-aos-delay="450">
+        Mentor – Buddy System (наставник)
+      </h3>
+      <p data-aos="fade-up" data-aos-delay="550">
+        Mentor within the university Buddy System, providing guidance to international students during their initial period of study, assisting with academic procedures, communication with university services, and early adaptation challenges.
+      </p>
+    </div>
+
+    <!-- Dormitory Union -->
+    <div class="activity-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500">
+      <h3 data-aos="fade-up" data-aos-delay="600">
+        Dormitory Student Union – ОСГ UrFU
+      </h3>
+      <p data-aos="fade-up" data-aos-delay="700">
+        Member of the dormitory student union, actively involved in student representation and collaboration with dormitory administration to address residence-related issues and improve living conditions.
+      </p>
+    </div>
+
+    <!-- Volunteering -->
+    <div class="activity-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="650">
+      <h3 data-aos="fade-up" data-aos-delay="750">
+        Volunteering & Professional Engagement
+      </h3>
+      <p data-aos="fade-up" data-aos-delay="850">
+        Volunteer at the “КОД ИБ” Information Security Conference in Yekaterinburg. Regular participant in information security conferences, hackathons, and CTF competitions, focusing on practical skill development and professional growth in cybersecurity.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="animate__animated animate__fadeIn">
+      <h2 data-aos="fade-down" data-aos-duration="800">Contact Me</h2>
+      <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/kirolos-khairy" target="_blank" aria-label="LinkedIn"
+           data-aos="flip-left" data-aos-duration="600" data-aos-delay="200"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/KirolosKhairy" target="_blank" aria-label="GitHub"
+           data-aos="flip-up" data-aos-duration="600" data-aos-delay="400"><i class="fab fa-github"></i></a>
+        <a href="mailto:kiroloskhairy2019@gmail.com" aria-label="Email"
+           data-aos="flip-right" data-aos-duration="600" data-aos-delay="600"><i class="fas fa-envelope"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Scroll-to-Top Button -->
+  <button id="scroll-to-top" title="Go to top" data-aos="fade-up" data-aos-delay="500">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer role="contentinfo" data-aos="fade-up" data-aos-duration="800">
+    <p>&copy; 2025 Kirolos Khairy. All rights reserved.</p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false,
+      offset: 50
+    });
+  </script>
+  <script src="./Scripts/background-animation.js"></script>
+  <script src="./Scripts/effects.js" defer></script>
+  <script src="./Scripts/scripts.js" defer></script>
+
+  <!-- Download functionality JavaScript -->
+  <script src="./Scripts/downloading.js" defer></script>
+</body>
+</html>
