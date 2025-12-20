@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
 
   // Initialize EmailJS
   useEffect(() => {
-    emailjs.init("Z4u6SMrODAUc_3s04");
+    emailjs.init("m4YvjgS6NYFnYJOl0");
   }, []);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -33,8 +33,8 @@ const handleSubmit = async (e: React.FormEvent) => {
   setSubmitStatus('idle');
 
   try {
-    const serviceID = 'service_6m2x21x';
-    const templateID = 'template_rvmi0ko';
+    const serviceID = 'service_k1c2d5a';
+    const templateID = 'template_bqore2a';
 
     // Get current time for the template
     const now = new Date();
@@ -168,8 +168,7 @@ const handleSubmit = async (e: React.FormEvent) => {
           </h1>
 
           <p data-aos="fade-up" data-aos-delay="200" className="text-xl text-text-secondary leading-relaxed max-w-3xl mx-auto">
-            Ready to enhance your organization's security posture? Let's discuss how I can help protect
-            your digital assets and strengthen your cybersecurity defenses.
+            If you have questions about my work or cybersecurity, feel free to reach out.
           </p>
         </div>
       </section>
