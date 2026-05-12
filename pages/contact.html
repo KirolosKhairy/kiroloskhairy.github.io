@@ -1,89 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="shortcut icon" type="image/x-icon" href="./../images/icon.png">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Kirolos Khairy — Information Security Engineering student at Ural Federal University (UrFU). Focused on cybersecurity, secure systems, Linux administration, networking, and hands-on security labs and competitions.">
-        <meta name="keywords" content="Information Security, Cybersecurity, UrFU, Ural Federal University, Linux, Kali Linux, Astra Linux, Wi-Fi Design, Ekahau, SOC, CTF, Hackathons">
-        <title>Contact Me - Kirolos Khairy</title>
-        <link rel="stylesheet" href="./../css/variables.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="./../css/contact.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <!-- AOS CSS -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-        <script type="text/javascript">
-            emailjs.init("m4YvjgS6NYFnYJOl0"); 
-        </script>
-    </head>
-    <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Kirolos Khairy</title>
+  <meta name="description" content="Contact Kirolos Khairy for cybersecurity, information security, software development, projects, or portfolio inquiries.">
+  <meta name="theme-color" content="#101114">
+  <link rel="canonical" href="https://kiroloskhairy.com/pages/contact.html">
 
-        <header id="header" data-aos="fade-down" data-aos-duration="800">
-            <nav>
-              <div class="header-title">Kirolos Khairy</div>
-              <button class="menu-icon" id="menu-icon" aria-label="Toggle Menu">
-                <i class="fas fa-bars"></i>
-              </button>
-              <div class="header-links" id="header-links">
-                <a href="./../index.html">Home</a>
-                <a href="./../index.html#about">About</a>
-                <a href="./certifications.html">Certifications</a>
-                <a href="./projects.html">Projects</a>
-                <a href="./../index.html#skills">Skills</a>
-                <a href="./contact.html" class="active-link">Contact</a>
-              </div>
-              <div class="header-buttons">
-                <a href="https://github.com/KirolosKhairy" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/kirolos-khairy/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <button id="mode-toggle" title="Switch Mode" aria-label="Switch Mode">
-                  <i class="fas fa-code"></i>
-                </button>
-              </div>
-            </nav>
-          </header>
-        <section id="contact">
-          <h2 class="animate__animated animate__fadeInDown" data-aos="fade-down" data-aos-duration="1000">Contact Me</h2>
-          <form id="contact-form" class="animate__animated animate__fadeInUp" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-            <div class="form-group" data-aos="slide-right" data-aos-duration="800" data-aos-delay="400">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" placeholder="Your Name" required>
-            </div>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact | Kirolos Khairy">
+  <meta property="og:description" content="Email, GitHub, LinkedIn, and contact form for Kirolos Khairy.">
+  <meta property="og:url" content="https://kiroloskhairy.com/pages/contact.html">
+  <meta property="og:image" content="https://kiroloskhairy.com/images/social-card.jpg?v=20260512-3">
+  <meta property="og:image:secure_url" content="https://kiroloskhairy.com/images/social-card.jpg?v=20260512-3">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact | Kirolos Khairy">
+  <meta name="twitter:description" content="Reach Kirolos Khairy by email, GitHub, LinkedIn, or contact form.">
+  <meta name="twitter:image" content="https://kiroloskhairy.com/images/social-card.jpg?v=20260512-3">
 
-            <div class="form-group" data-aos="slide-left" data-aos-duration="800" data-aos-delay="500">
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" placeholder="Your Email" required>
-            </div>
+  <link rel="icon" href="/images/favicon-32.png?v=20260512-5" sizes="32x32" type="image/png">
+  <link rel="shortcut icon" href="/images/favicon-32.png?v=20260512-5" type="image/png">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png?v=20260512-5">
+  <link rel="manifest" href="/site.webmanifest?v=20260512-5">
+  <link rel="stylesheet" href="../css/site.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script defer src="../Scripts/scripts.js"></script>
+  <script defer src="../Scripts/contact.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-            <div class="form-group" data-aos="slide-right" data-aos-duration="800" data-aos-delay="600">
-              <label for="subject">Subject:</label>
-              <input type="text" id="subject" name="subject" placeholder="Subject" required>
-            </div>
-            
-            <div class="form-group" data-aos="slide-left" data-aos-duration="800" data-aos-delay="700">
-              <label for="message">Message:</label>
-              <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-            </div>
-            
-            <button type="submit" id="button" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="800">Send Message</button>
-          </form>
-        </section>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="../index.html">
+        <img class="brand-mark" src="/images/icon.png?v=20260512-5" width="40" height="40" alt="" aria-hidden="true">
+        <span class="brand-copy">
+          <strong>Kirolos Khairy</strong>
+          <span>Information Security</span>
+        </span>
+      </a>
+      <button class="nav-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <ul class="nav-menu" id="primary-nav">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <li><a href="../index.html#competitions">Competitions</a></li>
+        <li><a href="../index.html#education">Education</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+      <div class="nav-actions" role="group" aria-label="Social links">
+        <a class="social-link" href="https://github.com/KirolosKhairy" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="social-link" href="https://www.linkedin.com/in/kirolos-khairy/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </nav>
+  </header>
 
-        <!-- AOS JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-        <script>
-          AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
-            once: true,
-            mirror: false,
-            offset: 50
-          });
-        </script>
-        <script src="./../Scripts/contact.js"></script>
-        <script src="./../Scripts/scripts.js"></script>
+  <main id="main">
+    <section class="section page-hero">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Contact</p>
+          <h1>Contact me</h1>
+          <p>Email is the most reliable way to reach me. The form below uses EmailJS when available and falls back to your mail app if the service is blocked.</p>
+          <div class="button-row page-actions">
+            <a class="button" href="mailto:kiroloskhairy2019@gmail.com">Email Directly</a>
+            <a class="button secondary" href="projects.html">View Projects</a>
+          </div>
+        </div>
 
-    </body>
+        <div class="contact-list">
+          <a class="contact-link" href="mailto:kiroloskhairy2019@gmail.com">
+            <strong>Email</strong>
+            <span>kiroloskhairy2019@gmail.com</span>
+          </a>
+          <a class="contact-link" href="https://github.com/KirolosKhairy" target="_blank" rel="noopener noreferrer">
+            <strong>GitHub</strong>
+            <span>github.com/KirolosKhairy</span>
+          </a>
+          <a class="contact-link" href="https://www.linkedin.com/in/kirolos-khairy/" target="_blank" rel="noopener noreferrer">
+            <strong>LinkedIn</strong>
+            <span>linkedin.com/in/kirolos-khairy</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt section-enhanced">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Message</p>
+          <h2>Send a message</h2>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" required>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button class="button" id="contact-submit" type="submit">Send Message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <button id="scroll-to-top" type="button" aria-label="Back to top">Top</button>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; 2026 Kirolos Khairy. All rights reserved.</p>
+      <div class="footer-links" role="group" aria-label="Footer links">
+        <a href="../index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="certifications.html">Certifications</a>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>

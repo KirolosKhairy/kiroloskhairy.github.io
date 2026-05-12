@@ -1,205 +1,106 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/x-icon" href="./../images/icon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificate Details</title>
-    <link rel="stylesheet" href="../css/variables.css">
-    <link rel="stylesheet" href="../css/certificate.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- AOS CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    <!-- Particles.js -->
-    <style>
-        #particles-js {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            background: var(--background-color);
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Certificate Details | Kirolos Khairy</title>
+  <meta name="description" content="Certificate detail page for Kirolos Khairy.">
+  <meta name="robots" content="noindex,follow">
+  <meta name="theme-color" content="#101114">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Certificate Details | Kirolos Khairy">
+  <meta property="og:description" content="Certificate detail page from Kirolos Khairy's cybersecurity portfolio.">
+  <meta property="og:url" content="https://kiroloskhairy.com/pages/certificate.html">
+  <meta property="og:image" content="https://kiroloskhairy.com/images/social-card.jpg?v=20260512-3">
+  <meta property="og:image:secure_url" content="https://kiroloskhairy.com/images/social-card.jpg?v=20260512-3">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Certificate Details | Kirolos Khairy">
+  <meta name="twitter:description" content="Certificate detail page from Kirolos Khairy's portfolio.">
+  <meta name="twitter:image" content="https://kiroloskhairy.com/images/social-card.jpg?v=20260512-3">
+
+  <link rel="icon" href="/images/favicon-32.png?v=20260512-5" sizes="32x32" type="image/png">
+  <link rel="shortcut icon" href="/images/favicon-32.png?v=20260512-5" type="image/png">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png?v=20260512-5">
+  <link rel="manifest" href="/site.webmanifest?v=20260512-5">
+  <link rel="stylesheet" href="../css/site.css">
+  <script defer src="../Scripts/scripts.js"></script>
+  <script defer src="../Scripts/certificate.js"></script>
 </head>
-<body class="software-mode">
-    <!-- Background Animation -->
-    <div id="particles-js"></div>
-    
-    <!-- Header -->
-    <header id="header" data-aos="fade-down" data-aos-duration="800">
-        <nav>
-            <div class="header-title">Kirolos Khairy</div>
-            <button class="menu-icon" id="menu-icon" aria-label="Toggle Menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="header-links" id="header-links">
-                <a href="../index.html">Home</a>
-                <a href="../index.html#about">About</a>
-                <a href="./certifications.html" class="active-link">Certifications</a>
-                <a href="./projects.html">Projects</a>
-                <a href="./contact.html">Contact</a>
-            </div>
-            <div class="header-buttons">
-                <a href="https://github.com/KirolosKhairy" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/kirolos-khairy/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <button id="mode-toggle" title="Switch Mode" aria-label="Switch Mode">
-                    <i class="fas fa-code"></i>
-                </button>
-            </div>
-        </nav>
-    </header>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-    <main id="certificate-details">
-        <div class="certificate-container" id="certificate-detail-container" data-aos="zoom-in" data-aos-duration="1000">
-            <div class="certificate-image-full" data-aos="fade-right" data-aos-duration="800">
-                <img id="certificate-img" src="" alt="Certificate Image">
-            </div>
-            <div class="certificate-info" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
-                <h2 id="certificate-title"></h2>
-                <p id="certificate-description"></p>
-                <p id="certificate-issuer"></p>
-                <p id="certificate-date"></p>
-                <a href="certifications.html" class="back-button" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="400">Back to Certifications</a>
-            </div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="../index.html">
+        <img class="brand-mark" src="/images/icon.png?v=20260512-5" width="40" height="40" alt="" aria-hidden="true">
+        <span class="brand-copy">
+          <strong>Kirolos Khairy</strong>
+          <span>Information Security</span>
+        </span>
+      </a>
+      <button class="nav-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <ul class="nav-menu" id="primary-nav">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <li><a href="../index.html#competitions">Competitions</a></li>
+        <li><a href="../index.html#education">Education</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="certifications.html" aria-current="page">Certifications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions" role="group" aria-label="Social links">
+        <a class="social-link" href="https://github.com/KirolosKhairy" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="social-link" href="https://www.linkedin.com/in/kirolos-khairy/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="section page-hero certificate-page">
+      <div class="container certificate-detail" id="certificate-detail">
+        <div class="section-header">
+          <p class="eyebrow">Certificate</p>
+          <h1 id="certificate-title">Certificate Details</h1>
+          <p id="certificate-summary">Loading certificate information...</p>
         </div>
-    </main>
-
-    <!-- Footer -->
-    <footer role="contentinfo" data-aos="fade-up" data-aos-duration="800">
-        <p>&copy; 2025 Kirolos Khairy. All rights reserved.</p>
-        <div class="contact-icons">
-            <a href="https://www.linkedin.com/in/kirolos-khairy" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.linkedin.com/in/kirolos-khairy" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="mailto:kiroloskhairy2019@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <div class="split">
+          <div class="media-panel">
+            <img id="certificate-image" src="../images/Certifications/thumbs/cert-01.jpg" width="480" height="340" alt="Certificate preview">
+          </div>
+          <div class="text-panel">
+            <p><strong>Issuer/Event:</strong> <span id="certificate-issuer">Not available</span></p>
+            <p><strong>Date:</strong> <span id="certificate-date">Not available</span></p>
+            <p id="certificate-description">Certificate details will appear here.</p>
+            <div class="button-row">
+              <a class="button" id="certificate-original" href="../images/Certifications/1.PNG" target="_blank" rel="noopener noreferrer">Open Original Image</a>
+              <a class="button secondary" href="certifications.html">Back to Certifications</a>
+            </div>
+          </div>
         </div>
-    </footer>
+        <noscript>
+          <p class="notice">JavaScript is required for this detail view. You can still browse all certificate previews from the certifications page.</p>
+        </noscript>
+      </div>
+    </section>
+  </main>
 
-    <!-- Scripts -->
-    <script src="../Scripts/scripts.js" type="module"></script>
-    <script src="../Scripts/certificate.js"></script>
-    <!-- AOS JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
-            once: true,
-            mirror: false
-        });
-    </script>
-    <!-- Particles.js -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            particlesJS("particles-js", {
-                "particles": {
-                    "number": {
-                        "value": 80,
-                        "density": {
-                            "enable": true,
-                            "value_area": 800
-                        }
-                    },
-                    "color": {
-                        "value": "#0d6efd"
-                    },
-                    "shape": {
-                        "type": "circle",
-                        "stroke": {
-                            "width": 0,
-                            "color": "#000000"
-                        },
-                        "polygon": {
-                            "nb_sides": 5
-                        }
-                    },
-                    "opacity": {
-                        "value": 0.5,
-                        "random": false,
-                        "anim": {
-                            "enable": false,
-                            "speed": 1,
-                            "opacity_min": 0.1,
-                            "sync": false
-                        }
-                    },
-                    "size": {
-                        "value": 3,
-                        "random": true,
-                        "anim": {
-                            "enable": false,
-                            "speed": 40,
-                            "size_min": 0.1,
-                            "sync": false
-                        }
-                    },
-                    "line_linked": {
-                        "enable": true,
-                        "distance": 150,
-                        "color": "#0d6efd",
-                        "opacity": 0.4,
-                        "width": 1
-                    },
-                    "move": {
-                        "enable": true,
-                        "speed": 2,
-                        "direction": "none",
-                        "random": false,
-                        "straight": false,
-                        "out_mode": "out",
-                        "bounce": false,
-                        "attract": {
-                            "enable": false,
-                            "rotateX": 600,
-                            "rotateY": 1200
-                        }
-                    }
-                },
-                "interactivity": {
-                    "detect_on": "canvas",
-                    "events": {
-                        "onhover": {
-                            "enable": true,
-                            "mode": "grab"
-                        },
-                        "onclick": {
-                            "enable": true,
-                            "mode": "push"
-                        },
-                        "resize": true
-                    },
-                    "modes": {
-                        "grab": {
-                            "distance": 140,
-                            "line_linked": {
-                                "opacity": 1
-                            }
-                        },
-                        "bubble": {
-                            "distance": 400,
-                            "size": 40,
-                            "duration": 2,
-                            "opacity": 8,
-                            "speed": 3
-                        },
-                        "repulse": {
-                            "distance": 200,
-                            "duration": 0.4
-                        },
-                        "push": {
-                            "particles_nb": 4
-                        },
-                        "remove": {
-                            "particles_nb": 2
-                        }
-                    }
-                },
-                "retina_detect": true
-            });
-        });
-    </script>
+  <button id="scroll-to-top" type="button" aria-label="Back to top">Top</button>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; 2026 Kirolos Khairy. All rights reserved.</p>
+      <div class="footer-links" role="group" aria-label="Footer links">
+        <a href="../index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

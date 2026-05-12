@@ -1,0 +1,29 @@
+{
+  "name": "Kirolos Khairy Portfolio",
+  "short_name": "Kirolos Khairy",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#101114",
+  "theme_color": "#101114",
+  "icons": [
+    {
+      "src": "/images/favicon-32.png?v=20260512-5",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/icon.png?v=20260512-5",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/apple-touch-icon.png?v=20260512-5",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
