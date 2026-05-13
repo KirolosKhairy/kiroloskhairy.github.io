@@ -11,13 +11,15 @@
     const toggle = document.getElementById("menu-toggle");
     const menu = document.getElementById("primary-nav");
     const scrollTop = document.getElementById("scroll-to-top");
+    const openMenuLabel = toggle?.dataset.openLabel || "Open navigation menu";
+    const closeMenuLabel = toggle?.dataset.closeLabel || "Close navigation menu";
 
     function closeMenu() {
       if (!toggle || !menu) return;
       menu.classList.remove("is-open");
       document.body.classList.remove("menu-open");
       toggle.setAttribute("aria-expanded", "false");
-      toggle.setAttribute("aria-label", "Open navigation menu");
+      toggle.setAttribute("aria-label", openMenuLabel);
     }
 
     if (toggle && menu) {
@@ -25,7 +27,7 @@
         const isOpen = menu.classList.toggle("is-open");
         document.body.classList.toggle("menu-open", isOpen);
         toggle.setAttribute("aria-expanded", String(isOpen));
-        toggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+        toggle.setAttribute("aria-label", isOpen ? closeMenuLabel : openMenuLabel);
       });
 
       menu.querySelectorAll("a").forEach((link) => {

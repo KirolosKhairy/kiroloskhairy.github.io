@@ -15,10 +15,10 @@
     };
   }
 
-  function buildMailto(data) {
+  function buildMailto(data, labels) {
     const body = [
-      `Name: ${data.name}`,
-      `Email: ${data.email}`,
+      `${labels.name}: ${data.name}`,
+      `${labels.email}: ${data.email}`,
       "",
       data.message
     ].join("\n");
@@ -37,22 +37,35 @@
 
     if (!form) return;
 
+    const messages = {
+      required: form.dataset.requiredMessage || "Please fill in every required field.",
+      sendingLabel: form.dataset.sendingLabel || "Sending...",
+      sending: form.dataset.sendingMessage || "Sending your message...",
+      success: form.dataset.successMessage || "Message sent successfully.",
+      emailUnavailable: form.dataset.emailUnavailableMessage || "Email service is unavailable. Opening your mail app instead.",
+      fallback: form.dataset.fallbackMessage || "The form service failed. Opening your mail app instead.",
+      submitLabel: form.dataset.submitLabel || "Send Message",
+      locale: form.dataset.locale || "en-US",
+      mailNameLabel: form.dataset.mailNameLabel || "Name",
+      mailEmailLabel: form.dataset.mailEmailLabel || "Email"
+    };
+
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
       const data = getFormData(form);
 
       if (!data.name || !data.email || !data.subject || !data.message) {
-        setStatus(status, "Please fill in every required field.");
+        setStatus(status, messages.required);
         return;
       }
 
       if (submit) {
         submit.disabled = true;
-        submit.textContent = "Sending...";
+        submit.textContent = messages.sendingLabel;
       }
-      setStatus(status, "Sending your message...");
+      setStatus(status, messages.sending);
 
-      const time = new Date().toLocaleString("en-US", {
+      const time = new Date().toLocaleString(messages.locale, {
         year: "numeric",
         month: "short",
         day: "numeric",
@@ -71,19 +84,25 @@
             time
           });
           form.reset();
-          setStatus(status, "Message sent successfully.");
+          setStatus(status, messages.success);
           return;
         }
 
-        setStatus(status, "Email service is unavailable. Opening your mail app instead.");
-        window.location.href = buildMailto(data);
+        setStatus(status, messages.emailUnavailable);
+        window.location.href = buildMailto(data, {
+          name: messages.mailNameLabel,
+          email: messages.mailEmailLabel
+        });
       } catch {
-        setStatus(status, "The form service failed. Opening your mail app instead.");
-        window.location.href = buildMailto(data);
+        setStatus(status, messages.fallback);
+        window.location.href = buildMailto(data, {
+          name: messages.mailNameLabel,
+          email: messages.mailEmailLabel
+        });
       } finally {
         if (submit) {
           submit.disabled = false;
-          submit.textContent = "Send Message";
+          submit.textContent = messages.submitLabel;
         }
       }
     });
