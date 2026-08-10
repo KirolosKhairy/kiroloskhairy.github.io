@@ -23,7 +23,7 @@
       data.message
     ].join("\n");
 
-    return `mailto:kiroloskhairy2019@gmail.com?subject=${encodeURIComponent(data.subject)}&body=${encodeURIComponent(body)}`;
+    return `mailto:kiroloskhairy@gmail.com?subject=${encodeURIComponent(data.subject)}&body=${encodeURIComponent(body)}`;
   }
 
   function setStatus(statusElement, message) {

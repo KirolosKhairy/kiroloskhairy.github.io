@@ -32,6 +32,46 @@
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png?v=20260512-5">
   <link rel="manifest" href="/site.webmanifest?v=20260512-5">
   <link rel="stylesheet" href="/css/site.css">
+
+  <style>
+    .project-update-note {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      max-width: 760px;
+      margin-top: 0.15rem;
+      padding: 0.7rem 0.9rem;
+      border: 1px solid rgba(45, 212, 191, 0.18);
+      border-left: 3px solid rgba(45, 212, 191, 0.75);
+      border-radius: 10px;
+      background: rgba(45, 212, 191, 0.045);
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+
+    .project-update-note strong {
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .project-update-dot {
+      flex: 0 0 auto;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--primary);
+      box-shadow: 0 0 12px rgba(45, 212, 191, 0.45);
+    }
+
+    @media (max-width: 600px) {
+      .project-update-note {
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+  </style>
   <script defer src="/Scripts/scripts.js"></script>
 </head>
 <body>
@@ -77,6 +117,10 @@
           <p class="eyebrow">Projects</p>
           <h1>Selected technical work</h1>
           <p>Selected public repositories and practical security work, linked directly for technical review.</p>
+          <div class="project-update-note" role="note">
+            <span class="project-update-dot" aria-hidden="true"></span>
+            <span><strong>More projects will be added soon.</strong> This list is currently being expanded with additional technical work.</span>
+          </div>
           <div class="button-row page-actions">
             <a class="button" href="/pages/certifications.html">View Certifications</a>
             <a class="button secondary" href="/pages/contact.html">Contact Me</a>
