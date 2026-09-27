@@ -3,87 +3,131 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#11110f">
-<meta name="description" content="Mosa Marella — Dentist">
+<meta name="theme-color" content="#1d342b">
+<meta name="description" content="Mosa Marella — private dental care in Moscow.">
 <title>Mosa Marella — Dentist</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap');
-:root{--black:#11110f;--black2:#1a1917;--cream:#f4efe7;--paper:#fbf9f5;--gold:#b89a62;--gold2:#d5bc8a;--text:#252321;--muted:#746e66;--line:#ded6ca}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#e9e3da;color:var(--text);font-family:"DM Sans",sans-serif}
-a{text-decoration:none}.wrap{width:min(100%,560px);margin:auto;background:var(--paper);min-height:100vh;box-shadow:0 0 50px rgba(0,0,0,.08)}
-.hero{background:var(--black);color:#fff;padding:38px 30px 42px;position:relative;overflow:hidden}
-.hero:before{content:"";position:absolute;width:220px;height:220px;border:1px solid rgba(213,188,138,.25);border-radius:50%;right:-150px;top:-135px}
-.hero:after{content:"";position:absolute;width:1px;height:250px;background:linear-gradient(transparent,var(--gold2),transparent);left:30px;bottom:-90px;transform:rotate(35deg)}
-.top{display:flex;justify-content:space-between;align-items:center;color:#aaa49a;font-size:9px;letter-spacing:2.5px;text-transform:uppercase}
-.monogram{margin:48px 0 18px;font-family:"Playfair Display",serif;font-size:58px;line-height:1;color:var(--gold2);letter-spacing:-5px}
-.name{font-family:"Playfair Display",serif;font-size:42px;line-height:1.02;letter-spacing:.5px;font-weight:500}
-.role{margin-top:13px;color:#d6c5a5;font-size:10px;letter-spacing:3px;text-transform:uppercase}
-.hero-rule{width:54px;height:1px;background:var(--gold);margin-top:25px}
-.content{padding:30px}
-.intro{font-family:"Playfair Display",serif;font-size:24px;line-height:1.35;margin:0;color:#302a25}
-.intro em{color:#8f7141;font-style:italic}
-.meta{display:flex;gap:22px;margin-top:22px;padding-bottom:27px;border-bottom:1px solid var(--line);color:var(--muted);font-size:11px}
-.meta span{position:relative}.meta span+span:before{content:"";position:absolute;left:-12px;top:4px;width:3px;height:3px;border-radius:50%;background:var(--gold)}
-.section{padding:28px 0;border-bottom:1px solid var(--line)}
-.eyebrow{font-size:9px;letter-spacing:2.8px;text-transform:uppercase;color:#927445;margin-bottom:14px}
-.languages{display:flex;gap:8px}
-.lang{flex:1;border:1px solid #d8cfc2;background:#fffdf9;padding:12px 8px;text-align:center;font-size:12px;color:#302c28}
-.lang b{display:block;font-size:8px;letter-spacing:1.7px;color:#9b8052;margin-bottom:4px;text-transform:uppercase;font-weight:500}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap');
+
+:root{
+  --green:#1d342b;
+  --green-2:#29463a;
+  --green-3:#526c5d;
+  --ivory:#f5f1e8;
+  --paper:#fbfaf6;
+  --champagne:#d4b77b;
+  --champagne-soft:#e4cf9e;
+  --ink:#202721;
+  --muted:#6e756f;
+  --line:#dcd8cd;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#dfe2dc;color:var(--ink);font-family:"DM Sans",sans-serif}
+a{text-decoration:none;color:inherit}
+.page{width:min(100%,620px);margin:auto;background:var(--paper);min-height:100vh;box-shadow:0 0 45px rgba(20,35,29,.10)}
+.hero{background:var(--green);color:#fff;padding:30px 28px 38px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:360px;height:360px;border:1px solid rgba(212,183,123,.20);border-radius:50%;right:-230px;top:-205px}
+.hero:after{content:"";position:absolute;width:220px;height:220px;border:1px solid rgba(212,183,123,.12);border-radius:50%;left:-170px;bottom:-170px}
+.nav{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:2}
+.nav .mini{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.65)}
+.nav a{font-size:9px;letter-spacing:1.8px;text-transform:uppercase;color:var(--champagne-soft)}
+.brand{position:relative;z-index:2;margin-top:64px}
+.mark{width:72px;height:72px;border:1px solid var(--champagne);display:grid;place-items:center;position:relative;margin-bottom:25px}
+.mark:before,.mark:after{content:"";position:absolute;border:1px solid var(--champagne);width:29px;height:29px;transform:rotate(45deg)}
+.mark:before{left:12px}.mark:after{right:12px}
+.mm{font-family:"Cormorant Garamond",serif;font-size:27px;letter-spacing:-3px;color:var(--champagne-soft);position:relative;z-index:2}
+.name{font-family:"Cormorant Garamond",serif;font-size:58px;line-height:.86;font-weight:500;letter-spacing:.3px}
+.role{margin-top:17px;font-size:10px;letter-spacing:3.5px;text-transform:uppercase;color:var(--champagne-soft)}
+.rule{width:58px;height:1px;background:var(--champagne);margin-top:25px}
+.hero-note{margin:22px 0 0;max-width:420px;font-family:"Cormorant Garamond",serif;font-size:21px;line-height:1.3;color:rgba(255,255,255,.86)}
+.content{padding:0 28px}
+.block{padding:31px 0;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:9px;letter-spacing:2.8px;text-transform:uppercase;color:var(--green-3);margin-bottom:13px}
+.about{font-family:"Cormorant Garamond",serif;font-size:28px;line-height:1.18;color:var(--green);margin:0}
+.about-sub{margin:13px 0 0;font-size:12px;line-height:1.7;color:var(--muted);max-width:510px}
+.languages{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.lang{border:1px solid var(--line);padding:13px 8px;text-align:center;background:#fffdf9}
+.lang strong{display:block;font-size:9px;letter-spacing:2px;color:var(--champagne);margin-bottom:5px}
+.lang span{font-size:11px}
 .services{display:flex;flex-direction:column}
-.service{display:flex;justify-content:space-between;gap:15px;padding:15px 0;border-bottom:1px solid #e5ddd2}
-.service:first-child{padding-top:0}.service:last-child{border-bottom:0;padding-bottom:0}
-.service-name{font-size:13px}.service-sub{font-size:10px;color:#8b847b;margin-top:4px}
-.price{font-family:"Playfair Display",serif;font-size:18px;color:#6f552d;white-space:nowrap}
-.cta{margin-top:28px;background:var(--black);color:white;padding:25px 22px}
-.cta-head{display:flex;justify-content:space-between;align-items:end;gap:15px}
-.cta-title{font-family:"Playfair Display",serif;font-size:26px}.cta-small{font-size:9px;letter-spacing:2px;color:#cbb58b;text-transform:uppercase}
-.phone{display:block;margin-top:12px;color:#e0cb9e;font-family:"Playfair Display",serif;font-size:25px}
-.buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:18px}
-.btn{padding:12px;text-align:center;font-size:10px;letter-spacing:1.5px;text-transform:uppercase}
-.call{background:var(--gold2);color:#171511}.wa{border:1px solid #8e774c;color:#eee8dc}
-.note{text-align:center;color:#918a81;font-size:9px;line-height:1.6;margin:20px 4px 0}
-.footer{text-align:center;padding:22px;color:#a78956;font-family:"Playfair Display",serif;font-size:14px;letter-spacing:2px}
-@media(max-width:420px){.content{padding:25px 22px}.hero{padding:30px 23px 36px}.name{font-size:38px}.intro{font-size:22px}.meta{gap:16px}.lang{padding:11px 5px}}
+.service{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:17px 0;border-bottom:1px solid #e7e3da}
+.service:last-child{border-bottom:0}
+.service-name{font-size:13px}
+.service-desc{font-size:10px;color:var(--muted);margin-top:4px}
+.price{font-family:"Cormorant Garamond",serif;font-size:21px;color:var(--green);white-space:nowrap}
+.contact{margin:30px -28px 0;background:var(--green);color:#fff;padding:30px 28px;position:relative;overflow:hidden}
+.contact:after{content:"MM";position:absolute;right:-12px;bottom:-42px;font-family:"Cormorant Garamond",serif;font-size:150px;line-height:1;color:rgba(212,183,123,.06)}
+.contact-inner{position:relative;z-index:1}
+.contact .eyebrow{color:var(--champagne-soft)}
+.contact-title{font-family:"Cormorant Garamond",serif;font-size:36px;line-height:1;margin:0}
+.phone{display:inline-block;margin-top:15px;font-family:"Cormorant Garamond",serif;font-size:29px;color:var(--champagne-soft)}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:19px}
+.btn{padding:13px;text-align:center;font-size:10px;letter-spacing:1.7px;text-transform:uppercase}
+.call{background:var(--champagne);color:var(--green)}
+.wa{border:1px solid rgba(212,183,123,.65);color:#fff}
+.note{text-align:center;font-size:9px;line-height:1.6;color:#858a84;margin:20px 5px 0}
+.footer{text-align:center;padding:25px 20px;font-family:"Cormorant Garamond",serif;letter-spacing:2.5px;font-size:14px;color:var(--green)}
+@media(max-width:430px){
+  .hero{padding:25px 22px 34px}.content{padding:0 22px}.contact{margin-left:-22px;margin-right:-22px;padding-left:22px;padding-right:22px}
+  .name{font-size:51px}.languages{grid-template-columns:1fr}.lang{display:flex;align-items:center;justify-content:center;gap:9px}.lang strong{margin:0}
+}
 </style>
 </head>
 <body>
-<main class="wrap">
+<main class="page">
 <header class="hero">
-<div class="top"><span>Private Dental Care</span><span>Moscow · Russia</span></div>
-<div class="monogram">MM</div>
-<div class="name">Mosa Marella</div>
-<div class="role">Dentist · Dental Care</div>
-<div class="hero-rule"></div>
+  <nav class="nav">
+    <span class="mini">Private Dental Care</span>
+    <a href="#contact">Appointment</a>
+  </nav>
+  <div class="brand">
+    <div class="mark"><span class="mm">MM</span></div>
+    <div class="name">Mosa Marella</div>
+    <div class="role">Dentist · Dental Care</div>
+    <div class="rule"></div>
+    <p class="hero-note">Personal dental care with a precise, calm and modern approach.</p>
+  </div>
 </header>
+
 <div class="content">
-<p class="intro">A calm, personal approach to <em>modern dentistry</em> — focused on healthy, confident smiles.</p>
-<div class="meta"><span>Personal care</span><span>Modern approach</span><span>By appointment</span></div>
-
-<section class="section">
-<div class="eyebrow">Languages</div>
-<div class="languages">
-<div class="lang"><b>RU</b>Russian</div>
-<div class="lang"><b>EN</b>English</div>
-<div class="lang"><b>AR</b>Arabic</div>
-</div>
+<section class="block">
+  <div class="eyebrow">About</div>
+  <p class="about">Healthy smiles, thoughtfully cared for.</p>
+  <p class="about-sub">A personal approach to everyday dental care, treatment and aesthetic dentistry. Consultations are available in Russian, English and Arabic.</p>
 </section>
 
-<section class="section">
-<div class="eyebrow">Services &amp; prices</div>
-<div class="services">
-<div class="service"><div><div class="service-name">Consultation &amp; examination</div><div class="service-sub">Initial check-up</div></div><div class="price">1,000 ₽</div></div>
-<div class="service"><div><div class="service-name">Professional teeth cleaning</div><div class="service-sub">Plaque &amp; tartar removal</div></div><div class="price">4,500 ₽</div></div>
-<div class="service"><div><div class="service-name">Teeth whitening</div><div class="service-sub">Professional whitening</div></div><div class="price">12,000 ₽</div></div>
-<div class="service"><div><div class="service-name">Caries treatment</div><div class="service-sub">Treatment &amp; restoration</div></div><div class="price">4,500 ₽</div></div>
-<div class="service"><div><div class="service-name">Dental filling</div><div class="service-sub">Aesthetic restoration</div></div><div class="price">4,000 ₽</div></div>
-<div class="service"><div><div class="service-name">Tooth restoration</div><div class="service-sub">Natural-looking result</div></div><div class="price">6,000 ₽</div></div>
-</div>
+<section class="block">
+  <div class="eyebrow">Languages</div>
+  <div class="languages">
+    <div class="lang"><strong>RU</strong><span>Russian</span></div>
+    <div class="lang"><strong>EN</strong><span>English</span></div>
+    <div class="lang"><strong>AR</strong><span>Arabic</span></div>
+  </div>
 </section>
 
-<section class="cta">
-<div class="cta-head"><div class="cta-title">Book a consultation</div><div class="cta-small">Appointments</div></div>
-<a class="phone" href="tel:+79991234567">+7 999 123-45-67</a>
-<div class="buttons"><a class="btn call" href="tel:+79991234567">Call</a><a class="btn wa" href="https://wa.me/79991234567">WhatsApp</a></div>
+<section class="block">
+  <div class="eyebrow">Services &amp; prices</div>
+  <div class="services">
+    <div class="service"><div><div class="service-name">Consultation &amp; examination</div><div class="service-desc">Initial check-up and treatment plan</div></div><div class="price">1 000 ₽</div></div>
+    <div class="service"><div><div class="service-name">Professional teeth cleaning</div><div class="service-desc">Plaque and tartar removal</div></div><div class="price">4 500 ₽</div></div>
+    <div class="service"><div><div class="service-name">Teeth whitening</div><div class="service-desc">Professional whitening</div></div><div class="price">12 000 ₽</div></div>
+    <div class="service"><div><div class="service-name">Caries treatment</div><div class="service-desc">Treatment and restoration</div></div><div class="price">4 500 ₽</div></div>
+    <div class="service"><div><div class="service-name">Dental filling</div><div class="service-desc">Aesthetic restoration</div></div><div class="price">4 000 ₽</div></div>
+    <div class="service"><div><div class="service-name">Tooth restoration</div><div class="service-desc">Natural-looking result</div></div><div class="price">6 000 ₽</div></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div class="eyebrow">Appointments</div>
+    <h2 class="contact-title">Book a consultation</h2>
+    <a class="phone" href="tel:+79991234567">+7 999 123-45-67</a>
+    <div class="actions">
+      <a class="btn call" href="tel:+79991234567">Call</a>
+      <a class="btn wa" href="https://wa.me/79991234567">WhatsApp</a>
+    </div>
+  </div>
 </section>
 <p class="note">Prices are indicative. Final treatment cost is determined after consultation and examination.</p>
 </div>
