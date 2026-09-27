@@ -2,42 +2,59 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#68786d"><meta name="description" content="Mosa Marella — private dental care.">
-<title>Mosa Marella — Dentist</title>
+<meta name="theme-color" content="#708076">
+<meta name="description" content="Mosa Marella — private dental care in Moscow.">
+<title>Mosa Marella — Dentistry</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap');
-:root{--sage:#68786d;--sage-dark:#56685d;--sage-deep:#405348;--paper:#fcfbf7;--champ:#e1cca0;--champ2:#c9b28a;--ink:#263029;--muted:#747b75;--line:#d9d8ce}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#e7e7e1;color:var(--ink);font-family:"DM Sans",sans-serif}a{text-decoration:none;color:inherit}
-.page{width:min(100%,620px);margin:auto;background:var(--paper);min-height:100vh;box-shadow:0 0 45px rgba(50,65,56,.08)}
-.hero{background:var(--sage);color:#fff;padding:27px 30px 46px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.025),transparent 55%);pointer-events:none}
-.nav{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:2}.nav span,.nav a{font-size:9px;letter-spacing:2.6px;text-transform:uppercase}.nav span{color:#fff9}.nav a{color:var(--champ)}
-.hero-main{position:relative;z-index:2;margin-top:58px}.logo{width:76px;height:76px;margin-bottom:25px}.logo svg{width:76px;height:76px}.name{font-family:"Cormorant Garamond",serif;font-size:59px;line-height:.9;font-weight:500;letter-spacing:.3px}.role{margin-top:15px;color:var(--champ);font-size:9px;letter-spacing:3.5px;text-transform:uppercase}.rule{width:55px;height:1px;background:var(--champ2);margin-top:24px}.hero-copy{margin:21px 0 0;max-width:470px;font-family:"Cormorant Garamond",serif;font-size:22px;line-height:1.28;color:#fffdf8}
-.content{padding:0 30px}.section{padding:31px 0;border-bottom:1px solid var(--line)}.eyebrow{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#60756a;margin-bottom:13px}.lead{font-family:"Cormorant Garamond",serif;font-size:30px;line-height:1.12;color:var(--sage-deep);margin:0}.text{font-size:12px;line-height:1.7;color:var(--muted);margin:12px 0 0}
-.languages{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.lang{border:1px solid var(--line);background:#fffdf9;padding:14px 8px;text-align:center}.lang b{display:block;color:var(--sage-dark);font-size:8px;letter-spacing:2px;margin-bottom:5px}.lang span{font-size:11px}
-.services{display:flex;flex-direction:column}.service{display:grid;grid-template-columns:1fr auto;gap:18px;padding:16px 0;border-bottom:1px solid #e7e5dc}.service:last-child{border:0}.service-name{font-size:13px}.service-desc{font-size:10px;color:var(--muted);margin-top:4px}.price{font-family:"Cormorant Garamond",serif;font-size:22px;color:var(--sage-deep);white-space:nowrap}
-.contact{background:var(--sage-dark);color:#fff;margin:30px -30px 0;padding:31px 30px}.contact .eyebrow{color:var(--champ)}.contact-title{font-family:"Cormorant Garamond",serif;font-size:38px;line-height:1;margin:0}.phone{display:block;margin-top:15px;font-family:"Cormorant Garamond",serif;font-size:29px;color:var(--champ)}.actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:19px}.btn{padding:13px;text-align:center;font-size:10px;letter-spacing:1.8px;text-transform:uppercase}.call{background:var(--champ);color:var(--sage-deep)}.wa{border:1px solid #e1cca0aa;color:#fff}.note{text-align:center;font-size:9px;line-height:1.6;color:#858a85;margin:20px 4px 0}.footer{text-align:center;padding:25px;font-family:"Cormorant Garamond",serif;color:var(--sage-deep);font-size:14px;letter-spacing:3px}
-@media(max-width:430px){.hero{padding:24px 22px 38px}.content{padding:0 22px}.contact{margin-left:-22px;margin-right:-22px;padding-left:22px;padding-right:22px}.name{font-size:51px}.languages{grid-template-columns:1fr}.lang{padding:12px}}
+:root{--sage:#708076;--sage2:#607269;--sage3:#53655c;--cream:#f4ecdd;--white:#fbfaf6;--champ:#dcc79d;--taupe:#b9a18a;--ink:#334039;--muted:#7b817c;--line:#ddd8cd}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#e5e7e1;color:var(--ink);font-family:"DM Sans",sans-serif}a{text-decoration:none;color:inherit}
+.page{width:min(100%,620px);margin:auto;background:var(--white);min-height:100vh;overflow:hidden}
+.hero{background:var(--sage);color:white;text-align:center;padding:28px 25px 52px;position:relative}
+.hero:before{content:"";position:absolute;width:270px;height:270px;border:1px solid rgba(220,199,157,.16);border-radius:50%;top:-205px;left:-190px}.hero:after{content:"";position:absolute;width:250px;height:250px;border:1px solid rgba(220,199,157,.14);border-radius:50%;right:-185px;bottom:-190px}
+.top{position:relative;z-index:2;font-size:8px;letter-spacing:2.8px;text-transform:uppercase;color:#f7f4ebbb}
+.brand{position:relative;z-index:2;margin:42px auto 0;display:flex;flex-direction:column;align-items:center}
+.logo{width:112px;height:112px;margin-bottom:25px}.logo svg{width:112px;height:112px}
+.name{font-family:"Cormorant Garamond",serif;font-size:56px;line-height:.9;font-weight:500;letter-spacing:1px;text-transform:uppercase}
+.role{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--champ);margin-top:15px}
+.hero-rule{width:48px;height:1px;background:var(--champ);margin:23px auto 0}
+.hero-copy{font-family:"Cormorant Garamond",serif;font-size:20px;line-height:1.3;max-width:390px;margin:18px auto 0;color:#fffdf8}
+.strip{height:13px;background:var(--cream);position:relative}.strip:after{content:"";position:absolute;left:50%;top:4px;transform:translateX(-50%);width:100px;height:5px;background:linear-gradient(90deg,var(--sage),var(--sage2) 45%,var(--champ) 46%,var(--champ) 72%,var(--taupe) 73%)}
+.content{padding:0 30px}.section{padding:34px 0;border-bottom:1px solid var(--line);text-align:center}.eyebrow{font-size:8px;letter-spacing:3px;text-transform:uppercase;color:var(--sage2);margin-bottom:13px}
+.lead{font-family:"Cormorant Garamond",serif;font-size:31px;line-height:1.1;color:var(--sage3);margin:0 auto;max-width:500px}.text{font-size:11px;line-height:1.75;color:var(--muted);max-width:470px;margin:13px auto 0}
+.languages{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.lang{border:1px solid var(--line);background:var(--cream);padding:16px 8px}.lang b{display:block;color:var(--sage2);font-size:8px;letter-spacing:2px;margin-bottom:5px}.lang span{font-size:11px}
+.services{display:grid;grid-template-columns:1fr 1fr;gap:9px;text-align:left}.service{background:var(--cream);padding:16px 14px;min-height:102px;border:1px solid #e7dfd1}.service-name{font-family:"Cormorant Garamond",serif;font-size:19px;line-height:1.05;color:var(--sage3)}.service-desc{font-size:9px;color:var(--muted);line-height:1.4;margin-top:7px}.price{margin-top:10px;font-size:12px;color:var(--taupe);letter-spacing:.3px}
+.contact{margin:0 -30px;background:var(--sage3);color:#fff;text-align:center;padding:38px 30px 42px}.contact .eyebrow{color:var(--champ)}.contact-title{font-family:"Cormorant Garamond",serif;font-size:40px;line-height:1;margin:0}.phone{display:block;font-family:"Cormorant Garamond",serif;font-size:29px;color:var(--champ);margin-top:14px}.actions{display:flex;justify-content:center;gap:8px;margin-top:20px}.btn{min-width:125px;padding:12px 16px;font-size:9px;letter-spacing:1.7px;text-transform:uppercase}.call{background:var(--champ);color:var(--sage3)}.wa{border:1px solid var(--champ);color:#fff}
+.note{text-align:center;font-size:8px;line-height:1.6;color:#8a8d88;margin:18px 5px 0}.footer{text-align:center;padding:25px;color:var(--sage3);font-family:"Cormorant Garamond",serif;letter-spacing:3px;font-size:14px}
+@media(max-width:430px){.hero{padding:24px 20px 43px}.content{padding:0 20px}.contact{margin-left:-20px;margin-right:-20px;padding-left:20px;padding-right:20px}.name{font-size:48px}.logo{width:100px;height:100px}.logo svg{width:100px;height:100px}.languages{gap:6px}.services{grid-template-columns:1fr}}
 </style>
 </head>
 <body><main class="page">
-<header class="hero"><nav class="nav"><span>Private Dental Care</span><a href="#contact">Appointment</a></nav>
-<div class="hero-main">
-<div class="logo"><svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Mosa Marella dental mark">
-<path d="M24 18H76L91 50L76 82H24L9 50L24 18Z" stroke="#E1CCA0" stroke-width="1.7"/>
-<path d="M24 18C24 36 34 44 50 50C66 44 76 36 76 18" stroke="#E1CCA0" stroke-width="1.7"/>
-<path d="M24 82C24 64 34 56 50 50C66 56 76 64 76 82" stroke="#E1CCA0" stroke-width="1.7"/>
-<path d="M9 50C27 50 36 43 50 27C64 43 73 50 91 50" stroke="#E1CCA0" stroke-width="1.7"/></svg></div>
-<div class="name">Mosa Marella</div><div class="role">Dentist · Dental Care</div><div class="rule"></div>
-<p class="hero-copy">A calm, personal approach to modern dentistry — focused on healthy, confident smiles.</p></div></header>
+<header class="hero">
+<div class="top">PRIVATE DENTAL CARE · MOSCOW</div>
+<div class="brand">
+<div class="logo"><svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 17H76L91 50L76 83H24L9 50L24 17Z" stroke="#DCC79D" stroke-width="1.55"/>
+<path d="M24 17C24 35 35 43 50 50C65 43 76 35 76 17" stroke="#DCC79D" stroke-width="1.55"/>
+<path d="M24 83C24 65 35 57 50 50C65 57 76 65 76 83" stroke="#DCC79D" stroke-width="1.55"/>
+<path d="M9 50C28 50 37 42 50 27C63 42 72 50 91 50" stroke="#DCC79D" stroke-width="1.55"/>
+</svg></div>
+<div class="name">Mosa Marella</div><div class="role">Dentistry</div><div class="hero-rule"></div>
+<p class="hero-copy">Thoughtful dental care with a calm, personal approach.</p>
+</div></header>
+<div class="strip"></div>
 <div class="content">
-<section class="section"><div class="eyebrow">About</div><p class="lead">Personal care. Precise treatment. A natural result.</p><p class="text">Professional dental care with a focus on comfort, attention to detail and a modern, thoughtful approach.</p></section>
+<section class="section"><div class="eyebrow">Welcome</div><p class="lead">A modern smile, cared for personally.</p><p class="text">Consultations and dental care in a comfortable, attentive environment. Communication available in Russian, English and Arabic.</p></section>
 <section class="section"><div class="eyebrow">Languages</div><div class="languages"><div class="lang"><b>RU</b><span>Russian</span></div><div class="lang"><b>EN</b><span>English</span></div><div class="lang"><b>AR</b><span>Arabic</span></div></div></section>
 <section class="section"><div class="eyebrow">Services &amp; prices</div><div class="services">
-<div class="service"><div><div class="service-name">Consultation &amp; examination</div><div class="service-desc">Initial check-up and treatment plan</div></div><div class="price">1 000 ₽</div></div>
-<div class="service"><div><div class="service-name">Professional teeth cleaning</div><div class="service-desc">Plaque and tartar removal</div></div><div class="price">4 500 ₽</div></div>
-<div class="service"><div><div class="service-name">Teeth whitening</div><div class="service-desc">Professional whitening</div></div><div class="price">12 000 ₽</div></div>
-<div class="service"><div><div class="service-name">Caries treatment</div><div class="service-desc">Treatment and restoration</div></div><div class="price">4 500 ₽</div></div>
-<div class="service"><div><div class="service-name">Dental filling</div><div class="service-desc">Aesthetic restoration</div></div><div class="price">4 000 ₽</div></div>
-<div class="service"><div><div class="service-name">Tooth restoration</div><div class="service-desc">Natural-looking result</div></div><div class="price">6 000 ₽</div></div></div></section>
-<section class="contact" id="contact"><div class="eyebrow">Appointments</div><h2 class="contact-title">Book a consultation</h2><a class="phone" href="tel:+79991234567">+7 999 123-45-67</a><div class="actions"><a class="btn call" href="tel:+79991234567">Call</a><a class="btn wa" href="https://wa.me/79991234567">WhatsApp</a></div></section>
-<p class="note">Prices are indicative. Final treatment cost is determined after consultation and examination.</p></div><footer class="footer">MOSA MARELLA</footer></main></body></html>
+<div class="service"><div class="service-name">Consultation</div><div class="service-desc">Examination &amp; treatment plan</div><div class="price">1 000 ₽</div></div>
+<div class="service"><div class="service-name">Professional cleaning</div><div class="service-desc">Plaque &amp; tartar removal</div><div class="price">4 500 ₽</div></div>
+<div class="service"><div class="service-name">Whitening</div><div class="service-desc">Professional whitening</div><div class="price">12 000 ₽</div></div>
+<div class="service"><div class="service-name">Caries treatment</div><div class="service-desc">Treatment &amp; restoration</div><div class="price">4 500 ₽</div></div>
+<div class="service"><div class="service-name">Dental filling</div><div class="service-desc">Aesthetic restoration</div><div class="price">4 000 ₽</div></div>
+<div class="service"><div class="service-name">Tooth restoration</div><div class="service-desc">Natural-looking result</div><div class="price">6 000 ₽</div></div>
+</div></section>
+<section class="contact" id="contact"><div class="eyebrow">Appointments</div><h2 class="contact-title">Let’s talk about your smile.</h2><a class="phone" href="tel:+79991234567">+7 999 123-45-67</a><div class="actions"><a class="btn call" href="tel:+79991234567">Call</a><a class="btn wa" href="https://wa.me/79991234567">WhatsApp</a></div></section>
+<p class="note">Prices are indicative. Final treatment cost is determined after consultation and examination.</p>
+</div><footer class="footer">MOSA MARELLA · DENTISTRY</footer>
+</main></body></html>
