@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#5f7167"><meta name="description" content="Mosa Marella — private dental care.">
+<title>Mosa Marella — Dentist</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap');
+:root{--sage:#5f7167;--sage-dark:#465a50;--sage-soft:#dfe4dc;--cream:#f4eee2;--paper:#fbfaf6;--gold:#d9c295;--gold-dark:#b89d69;--ink:#27332d;--muted:#747c76;--line:#ddd9cf}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#e4e7e2;color:var(--ink);font-family:"DM Sans",sans-serif}a{text-decoration:none;color:inherit}
+.page{width:min(100%,680px);margin:auto;background:var(--paper);min-height:100vh;overflow:hidden}
+.hero{background:var(--sage);color:#fff;padding:24px 32px 62px;position:relative}.hero:before{content:"";position:absolute;width:420px;height:420px;border:1px solid rgba(217,194,149,.12);border-radius:50%;right:-300px;top:-260px}.hero:after{content:"";position:absolute;width:260px;height:260px;border:1px solid rgba(217,194,149,.09);border-radius:50%;left:-220px;bottom:-210px}
+.nav{display:flex;align-items:center;justify-content:space-between;position:relative;z-index:2}.nav .brand-mini{font-size:9px;letter-spacing:2.7px;text-transform:uppercase;color:#fff9}.nav a{font-size:9px;letter-spacing:1.7px;text-transform:uppercase;color:var(--sage);background:var(--gold);padding:11px 16px;border-radius:22px}
+.hero-center{position:relative;z-index:2;text-align:center;margin-top:52px}.logo{width:150px;height:108px;margin:0 auto 18px;position:relative;display:grid;place-items:end center}.logo .mm{font-family:"Cormorant Garamond",serif;font-size:82px;line-height:.82;letter-spacing:-13px;color:var(--gold);font-weight:500;position:relative;z-index:1;padding-right:10px}.logo .tooth{position:absolute;width:94px;height:68px;top:0;left:28px;z-index:2}.logo .tooth path{stroke:var(--gold);stroke-width:2.7;fill:none;stroke-linecap:round;stroke-linejoin:round}.name{font-family:"Cormorant Garamond",serif;font-size:62px;line-height:.9;font-weight:500;letter-spacing:.2px}.role{margin-top:15px;color:var(--gold);font-size:9px;letter-spacing:4px;text-transform:uppercase}.rule{height:1px;width:58px;background:var(--gold);margin:23px auto 0}.tagline{font-family:"Cormorant Garamond",serif;font-size:21px;line-height:1.3;max-width:440px;margin:18px auto 0;color:#fffdf8}
+.section{padding:34px 32px;border-bottom:1px solid var(--line)}.section-head{display:flex;align-items:center;gap:16px;margin-bottom:27px}.eyebrow{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--sage-dark);white-space:nowrap}.head-line{height:1px;background:var(--line);flex:1}.head-note{font-size:8px;letter-spacing:2px;text-transform:uppercase;color:#9a9e99;white-space:nowrap}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 20px}.service{min-width:0}.num{font-family:"Cormorant Garamond",serif;color:var(--gold-dark);font-size:13px;margin-bottom:10px}.service-name{font-family:"Cormorant Garamond",serif;font-size:21px;line-height:1.02;color:var(--ink)}.service-line{width:25px;height:1px;background:var(--gold-dark);margin:12px 0}.service-desc{font-size:10px;line-height:1.5;color:var(--muted)}.price{font-size:11px;margin-top:9px;color:var(--sage-dark);letter-spacing:.3px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;background:var(--cream)}.about-copy .lead{font-family:"Cormorant Garamond",serif;font-size:39px;line-height:1.02;color:var(--sage-dark);margin:0}.about-copy p{font-size:11px;line-height:1.7;color:var(--muted);margin:17px 0 0}.about-mark{min-height:235px;background:var(--sage);display:grid;place-items:center;position:relative;overflow:hidden}.about-mark:after{content:"MM";position:absolute;font-family:"Cormorant Garamond",serif;font-size:180px;color:rgba(217,194,149,.05);bottom:-65px;right:-25px}.about-logo{width:150px;position:relative;z-index:1}.about-logo svg{width:150px;height:110px}
+.languages{display:flex;gap:9px}.lang{border:1px solid var(--line);background:#fffdf9;padding:13px 20px;min-width:105px;text-align:center}.lang b{display:block;color:var(--gold-dark);font-size:8px;letter-spacing:2px;margin-bottom:5px}.lang span{font-size:10px}
+.contact{background:var(--sage-dark);color:#fff;padding:38px 32px;display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center}.contact .eyebrow{color:var(--gold)}.contact-title{font-family:"Cormorant Garamond",serif;font-size:42px;line-height:.95;margin:0}.contact-copy{font-family:"Cormorant Garamond",serif;font-size:18px;color:#fff9;margin-top:12px}.contact-actions{min-width:220px}.book{display:block;background:var(--gold);color:var(--sage-dark);padding:14px 20px;text-align:center;border-radius:24px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase}.contact-links{display:flex;gap:18px;margin-top:18px}.contact-link{font-size:10px;color:#fff}.contact-link strong{display:block;font-family:"Cormorant Garamond",serif;font-size:18px;color:var(--gold);margin-bottom:3px}.phone{color:inherit}.note{text-align:center;font-size:8px;line-height:1.6;color:#888e89;padding:17px 20px 0}.footer{text-align:center;padding:25px;font-family:"Cormorant Garamond",serif;color:var(--sage-dark);font-size:14px;letter-spacing:3px}
+@media(max-width:600px){.hero{padding:22px 22px 48px}.nav a{padding:10px 13px}.name{font-size:52px}.section{padding:29px 22px}.services{grid-template-columns:repeat(2,1fr);gap:26px 17px}.about{grid-template-columns:1fr}.about-mark{min-height:180px}.contact{padding:32px 22px;grid-template-columns:1fr}.contact-actions{min-width:0}.languages{flex-wrap:wrap}.lang{flex:1;min-width:0}.head-note{display:none}}
+@media(max-width:390px){.services{grid-template-columns:1fr}.name{font-size:48px}}
+</style>
+</head>
+<body><main class="page">
+<header class="hero">
+<nav class="nav"><span class="brand-mini">Private Dental Care</span><a href="#contact">Book Appointment</a></nav>
+<div class="hero-center">
+<div class="logo" aria-label="MM monogram with tooth"><span class="mm">MM</span><svg class="tooth" viewBox="0 0 100 72" xmlns="http://www.w3.org/2000/svg"><path d="M14 22C14 8 28 3 40 12C50 19 50 19 50 19C50 19 50 19 60 12C72 3 86 8 86 22C86 39 73 48 50 67C27 48 14 39 14 22Z"/></svg></div>
+<div class="name">Mosa Marella</div><div class="role">Dentist · Dental Care</div><div class="rule"></div><p class="tagline">A calm, personal approach to modern dentistry — focused on healthy, confident smiles.</p>
+</div>
+</header>
+
+<section class="section">
+<div class="section-head"><span class="eyebrow">Our Services</span><span class="head-line"></span><span class="head-note">Healthy smiles, brighter days</span></div>
+<div class="services">
+<div class="service"><div class="num">01</div><div class="service-name">Consultation<br>&amp; Examination</div><div class="service-line"></div><div class="service-desc">Initial check-up and personalized treatment plan.</div><div class="price">1 000 ₽</div></div>
+<div class="service"><div class="num">02</div><div class="service-name">Professional<br>Cleaning</div><div class="service-line"></div><div class="service-desc">Removal of plaque and tartar for a healthier smile.</div><div class="price">4 500 ₽</div></div>
+<div class="service"><div class="num">03</div><div class="service-name">Teeth<br>Whitening</div><div class="service-line"></div><div class="service-desc">Professional whitening for a brighter, confident smile.</div><div class="price">12 000 ₽</div></div>
+<div class="service"><div class="num">04</div><div class="service-name">Caries<br>Treatment</div><div class="service-line"></div><div class="service-desc">Modern treatment and restoration.</div><div class="price">4 500 ₽</div></div>
+<div class="service"><div class="num">05</div><div class="service-name">Dental<br>Filling</div><div class="service-line"></div><div class="service-desc">Aesthetic restoration with durable materials.</div><div class="price">4 000 ₽</div></div>
+<div class="service"><div class="num">06</div><div class="service-name">Tooth<br>Restoration</div><div class="service-line"></div><div class="service-desc">Restoring function and a natural look.</div><div class="price">6 000 ₽</div></div>
+</div>
+</section>
+
+<section class="about section">
+<div class="about-copy"><div class="eyebrow">About</div><p class="lead">Personal care.<br>Precise treatment.<br>A natural result.</p><p>Professional dental care with a focus on comfort, attention to detail and a modern, thoughtful approach.</p></div>
+<div class="about-mark"><div class="about-logo"><svg viewBox="0 0 160 115" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 85V28H31L68 78L105 28H119V85" stroke="#D9C295" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M53 85V55L68 76L84 55V85" stroke="#D9C295" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M50 29C50 12 65 5 80 16C95 5 110 12 110 29C110 45 96 52 80 69C64 52 50 45 50 29Z" stroke="#D9C295" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+</section>
+
+<section class="section"><div class="section-head"><span class="eyebrow">Languages</span><span class="head-line"></span></div><div class="languages"><div class="lang"><b>RU</b><span>Russian</span></div><div class="lang"><b>EN</b><span>English</span></div><div class="lang"><b>AR</b><span>Arabic</span></div></div></section>
+
+<section class="contact" id="contact"><div><div class="eyebrow">Appointments</div><h2 class="contact-title">Book a consultation</h2><div class="contact-copy">Take the first step towards a healthier, more confident smile.</div></div><div class="contact-actions"><a class="book" href="tel:+79991234567">Book Appointment</a><div class="contact-links"><a class="contact-link" href="https://wa.me/79991234567"><strong>WhatsApp</strong>Quick booking</a><a class="contact-link" href="tel:+79991234567"><strong>Call</strong>+7 999 123-45-67</a></div></div></section>
+<p class="note">Prices are indicative. Final treatment cost is determined after consultation and examination.</p>
+<footer class="footer">MOSA MARELLA · DENTISTRY</footer>
+</main></body></html>
